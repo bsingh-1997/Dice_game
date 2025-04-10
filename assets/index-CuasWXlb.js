@@ -70,7 +70,7 @@ cursor: pointer;
     transition: 0.3s background ease-in ;
 
 }
-`,Yv=({toggle:c})=>lt.jsxs(Bv,{children:[lt.jsx("div",{children:lt.jsx("img",{src:"/images/dices.png"})}),lt.jsxs("div",{className:"content",children:[lt.jsx("h1",{children:"Dice Game"}),lt.jsx(nr,{onClick:c,children:"Play Now"})]})]}),Bv=Gl.div`
+`,Yv="/Dice_game/assets/dices-DGBPYOtr.png",Bv=({toggle:c})=>lt.jsxs(Cv,{children:[lt.jsx("div",{children:lt.jsx("img",{src:Yv})}),lt.jsxs("div",{className:"content",children:[lt.jsx("h1",{children:"Dice Game"}),lt.jsx(nr,{onClick:c,children:"Play Now"})]})]}),Cv=Gl.div`
     /* background-color: red; */
     max-width: 1180px;
     display: flex;
@@ -86,7 +86,7 @@ cursor: pointer;
         }
     }
 
-`,Cv=({score:c})=>lt.jsxs(jv,{children:[lt.jsx("h1",{children:c}),lt.jsx("p",{children:"Total Score"})]}),jv=Gl.div`
+`,jv=({score:c})=>lt.jsxs(Gv,{children:[lt.jsx("h1",{children:c}),lt.jsx("p",{children:"Total Score"})]}),Gv=Gl.div`
 max-width: 200px;
 /* background-color: aqua; */
 text-align: center;
@@ -100,7 +100,7 @@ text-align: center;
         font-size: 24px;
         font-weight: 500px;
     }
-`,Gv=({selected:c,setSelected:s,error:o,seterror:r})=>{const S=[1,2,3,4,5,6],z=R=>{s(R),r("")};return lt.jsxs(Xv,{children:[lt.jsx("p",{className:"err",children:o}),lt.jsx("div",{className:"flex",children:S.map((R,Y)=>lt.jsx(Qv,{isSelected:R==c,onClick:()=>z(R),children:R},Y))}),lt.jsx("p",{children:"Select Number"})]})},Xv=Gl.div`
+`,Xv=({selected:c,setSelected:s,error:o,seterror:r})=>{const S=[1,2,3,4,5,6],z=R=>{s(R),r("")};return lt.jsxs(Qv,{children:[lt.jsx("p",{className:"err",children:o}),lt.jsx("div",{className:"flex",children:S.map((R,Y)=>lt.jsx(Zv,{isSelected:R==c,onClick:()=>z(R),children:R},Y))}),lt.jsx("p",{children:"Select Number"})]})},Qv=Gl.div`
     /* background-color:red; */
     align-items: end;
     flex-direction: column;
@@ -117,7 +117,7 @@ text-align: center;
         color: red;
         margin: 0;
     }
-`,Qv=Gl.div`
+`,Zv=Gl.div`
     height: 72px;
     width: 72px;
     border:1px solid black;
@@ -127,7 +127,7 @@ text-align: center;
     font-weight: 700;
     background-color: ${c=>c.isSelected?"black":"white"};
     color: ${c=>c.isSelected?"white":"black"};
-`,Zv=({roleDice:c,currentdice:s})=>lt.jsxs(Vv,{children:[lt.jsx("div",{className:"dice",onClick:c,children:lt.jsx("img",{src:`/images/dice/dice_${s}.png`})}),lt.jsx("p",{children:"Click on dice to roll"})]}),Vv=Gl.div`
+`,Vv=({roleDice:c,currentdice:s})=>lt.jsxs(Lv,{children:[lt.jsx("div",{className:"dice",onClick:c,children:lt.jsx("img",{src:`/images/dice/dice_${s}.png`})}),lt.jsx("p",{children:"Click on dice to roll"})]}),Lv=Gl.div`
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -140,7 +140,7 @@ text-align: center;
     .dice{
         cursor: pointer;
     }
-`,Lv=()=>lt.jsxs(Kv,{children:[lt.jsx("h2",{children:"How to play dice game"}),lt.jsx("p",{children:"Select any number"}),lt.jsx("p",{children:"Click on dice image"}),lt.jsx("p",{children:"After click on dice if selected number is equal to dice number you will get same point as dice"}),lt.jsx("p",{children:"If you get wrong guess then two points will be deducted"})]}),Kv=Gl.div`
+`,Kv=()=>lt.jsxs(wv,{children:[lt.jsx("h2",{children:"How to play dice game"}),lt.jsx("p",{children:"Select any number"}),lt.jsx("p",{children:"Click on dice image"}),lt.jsx("p",{children:"After click on dice if selected number is equal to dice number you will get same point as dice"}),lt.jsx("p",{children:"If you get wrong guess then two points will be deducted"})]}),wv=Gl.div`
 background-color: rgba(251, 241, 241, 1);
 width: 800px;
 display: flex;
@@ -158,7 +158,7 @@ p{
 h2{
     margin: 15px;
 }
-`,wv=()=>{const[c,s]=jl.useState(0),[o,r]=jl.useState(),[S,z]=jl.useState(1),[R,Y]=jl.useState(""),[M,E]=jl.useState(!1),U=()=>{E(V=>!V)},C=(V,k)=>(console.log(Math.floor(Math.random()*(k-V+1))+V),Math.floor(Math.random()*(k-V+1))+V),j=()=>{s(0)},J=()=>{if(!o){Y("Please select a number");return}const V=C(1,6);z(k=>V),o==V?s(k=>k+V):s(k=>k-2),r(void 0)};return lt.jsxs(Jv,{children:[lt.jsxs("div",{className:"top_section",children:[lt.jsx(Cv,{score:c}),lt.jsx(Gv,{error:R,seterror:Y,selected:o,setSelected:r})]}),lt.jsx(Zv,{currentdice:S,roleDice:J}),lt.jsxs("div",{className:"btns",children:[lt.jsx(nr,{onClick:j,children:"Reset"}),lt.jsxs(nr,{onClick:U,children:[M?"Hide":"Show"," Rules"]})]}),M&&lt.jsx(Lv,{})]})},Jv=Gl.div`
+`,Jv=()=>{const[c,s]=jl.useState(0),[o,r]=jl.useState(),[S,z]=jl.useState(1),[R,Y]=jl.useState(""),[M,E]=jl.useState(!1),U=()=>{E(V=>!V)},C=(V,k)=>(console.log(Math.floor(Math.random()*(k-V+1))+V),Math.floor(Math.random()*(k-V+1))+V),j=()=>{s(0)},J=()=>{if(!o){Y("Please select a number");return}const V=C(1,6);z(k=>V),o==V?s(k=>k+V):s(k=>k-2),r(void 0)};return lt.jsxs($v,{children:[lt.jsxs("div",{className:"top_section",children:[lt.jsx(jv,{score:c}),lt.jsx(Xv,{error:R,seterror:Y,selected:o,setSelected:r})]}),lt.jsx(Vv,{currentdice:S,roleDice:J}),lt.jsxs("div",{className:"btns",children:[lt.jsx(nr,{onClick:j,children:"Reset"}),lt.jsxs(nr,{onClick:U,children:[M?"Hide":"Show"," Rules"]})]}),M&&lt.jsx(Kv,{})]})},$v=Gl.div`
     .top_section{
         display: flex;
         justify-content: space-around;
@@ -177,4 +177,4 @@ h2{
 background-color:black;
 color: white;
 padding:10px;
-`;function $v(){const[c,s]=jl.useState(!1),o=()=>{s(r=>!r)};return lt.jsx(lt.Fragment,{children:c?lt.jsx(wv,{}):lt.jsx(Yv,{toggle:o})})}xy.createRoot(document.getElementById("root")).render(lt.jsx(jl.StrictMode,{children:lt.jsx($v,{})}));
+`;function kv(){const[c,s]=jl.useState(!1),o=()=>{s(r=>!r)};return lt.jsx(lt.Fragment,{children:c?lt.jsx(Jv,{}):lt.jsx(Bv,{toggle:o})})}xy.createRoot(document.getElementById("root")).render(lt.jsx(jl.StrictMode,{children:lt.jsx(kv,{})}));
